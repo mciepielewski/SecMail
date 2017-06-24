@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:text="Importuj klucze"
+        android:textSize="30dp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fieldmail"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="30px"
+        android:hint="example@email.com"
+        android:selectAllOnFocus="false"
+        android:singleLine="false" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:layout_below="@+id/fieldmail"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="22dp"
+        android:text="Z pliku" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/title"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignTop="@+id/checkBox3"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text="Wklej ze schowka" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelPublic"
+        android:layout_below="@+id/fieldmail"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="25dp"
+        android:text="Klucz publiczny"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wybierz plik"
+        android:layout_below="@id/labelPublic"
+        android:layout_marginLeft="15dp"
+        android:visibility="gone"
+        android:id="@+id/choosePublic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelPrivate"
+        android:layout_below="@+id/fieldmail"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="25dp"
+        android:text="Klucz prywatny"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/choosePrivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:text="Wybierz plik"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/labelPrivate"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klucz publiczny"
+        android:layout_below="@+id/choosePublic"
+        android:id="@+id/namePublic"
+        android:visibility="gone"
+        android:layout_marginLeft="17dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klucz prywatny"
+        android:layout_below="@+id/choosePrivate"
+        android:id="@+id/namePrivate"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pubEditText"
+        android:layout_below="@+id/fieldmail"
+        android:layout_marginTop="10dp"
+        android:hint="Klucz publiczny"
+        android:visibility="gone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/privEditText"
+        android:layout_below="@+id/pubEditText"
+        android:layout_marginTop="10dp"
+        android:hint="Klucz prywatny"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72dp"
+        android:text="Zapisz" />
+
+
+</RelativeLayout>

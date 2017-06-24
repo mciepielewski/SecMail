@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/messages_logo"
+            android:title="Wiadomości" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/contacts_logo"
+            android:title="Kontakty" />
+        <item
+            android:id="@+id/nav_keys"
+            android:icon="@drawable/keys_logo"
+            android:title="Twoje klucze" />
+        <item
+            android:id="@+id/nav_client"
+            android:icon="@drawable/email"
+            android:title="Klient pocztowy" />
+    </group>
+
+</menu>

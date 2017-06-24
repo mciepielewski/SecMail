@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sec.sec">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ikona"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GenerateKeyActivity">
+        </activity>
+        <activity
+            android:name=".ShowKeysActivity">
+        </activity>
+        <activity
+            android:name=".GenMessages">
+        </activity>
+        <activity
+            android:name=".decMessage">
+        </activity>
+        <activity
+            android:name=".MessagesActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Wiadomości">
+        </activity>
+        <activity
+            android:name=".ContactDetails"
+            android:label="Szczegóły kontaktu">
+        </activity>
+        <activity
+            android:name=".NewContact">
+        </activity>
+        <activity
+            android:name=".Contacts"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Kontakty">
+        </activity>
+
+        <activity
+            android:name=".ListKeys"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Twoje klucze">
+        </activity>
+        <activity
+            android:name=".KeyDetails"
+            android:label="Zarządzaj kluczem">
+        </activity>
+        <activity
+            android:name=".FAQactivity"
+            android:label="FAQ"/>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Ustawienia globalne"/>
+        <activity
+            android:name=".ConfigMailActivity"
+            android:label="Konfiguracja poczty" />
+        <activity
+            android:name=".ClientMailActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Klient pocztowy" />
+        <activity
+            android:name=".ConfClientMailActivity"
+            android:label="Konfiguracja klienta" />
+        <activity
+            android:name=".ReceivedMsgActivity"
+            android:label="Odebrane wiadomości" />
+        <activity
+            android:name=".SentMsgActivity"
+            android:label="Wysłane wiadomości Email" />
+        <activity
+            android:name=".MailDetails"
+            android:label="Wiadomość email" />
+        <activity
+            android:name=".ActualConfig"
+            android:label="Ustawienia poczty" />
+        <activity
+            android:name=".NewConfig"
+            android:label="Skonfiguruj pocztę" />
+        <activity
+            android:name=".ImportKey"
+            android:label="Import kluczy"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.GET_CONTENT" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.OPENABLE" />
+            <data android:mimeType="*/*" />
+        </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+</manifest>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:text="Generuj Klucz"
+        android:textSize="30dp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fieldmail"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="30px"
+        android:hint="example@email.com"
+        android:selectAllOnFocus="false"
+        android:singleLine="false" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fieldpass"
+        android:hint="Hasło"
+        android:layout_below="@+id/fieldmail"
+        android:password="true"
+        android:layout_marginTop="30px"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fieldpass2"
+        android:layout_below="@+id/fieldpass"
+        android:hint="Powtórz Hasło"
+        android:password="true"
+        android:layout_marginTop="30px"
+/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fieldlongkey"
+        android:layout_below="@+id/fieldpass2"
+        android:text="Długość klucza(2048 bitów)"
+        android:editable="false"
+        android:layout_marginTop="30px" />
+
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/btnWithText"
+        android:layout_below="@+id/fieldlongkey"
+        android:layout_width="160dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:cpb_textComplete="Gotowe"
+        app:cpb_textError="Błąd"
+        app:cpb_textIdle="Generuj"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="400px"
+        android:visibility="invisible"
+        android:id="@+id/viewPublicKey">
+        <TextView
+            android:id="@+id/publicKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </ScrollView>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="400px"
+        android:layout_below="@+id/viewPublicKey"
+        android:layout_marginTop="100px"
+        android:visibility="invisible"
+        android:id="@+id/viewPrivateKey">
+        <TextView
+            android:id="@+id/privateKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentKeys"
+        android:text="Klucze"
+         android:gravity="center"
+         android:textSize="30dp"
+         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generuj Klucz"
+        android:id="@+id/genKey"
+        android:onClick="genKey"
+        android:layout_below="@+id/contentKeys"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista Kluczy"
+        android:id="@+id/keyList"
+        android:onClick="keyList"
+        android:layout_below="@+id/genKey"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

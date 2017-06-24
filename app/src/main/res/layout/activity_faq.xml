@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPrimary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/box1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Po co szyfrować wiadomości?"
+            android:textColor="@color/questionColor"
+            android:textSize="28sp"
+            android:id="@+id/a1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Szyfrowanie wiadomości pomaga je chronić przed uzyskaniem do nich dostępu przez osoby trzecie, gdy są przesyłane między nadawcą a odbiorcą. "
+            android:textColor="@color/answerColor"
+            android:textSize="17sp"
+            android:id="@+id/r1"
+            android:layout_below="@+id/a1"
+            android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/box2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Do czego służy aplikacja?"
+            android:textColor="@color/questionColor"
+            android:textSize="28sp"
+            android:id="@+id/a2"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Dzięki naszej aplikacji możesz wygenerować parę kluczy (publiczny i prywatny), szyfrować oraz deszyfrować każdą wiadomość zakodowaną algorytmem AES. "
+            android:textColor="@color/answerColor"
+            android:textSize="17sp"
+            android:id="@+id/r2"
+            android:layout_below="@+id/a2"
+            android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/box3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Jakich algorytmów używamy?"
+            android:textColor="@color/questionColor"
+            android:textSize="28sp"
+            android:id="@+id/a3"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Do wszelkich operacji szyfrowania wykorzystujemy algorytmy RSA oraz AES."
+            android:textColor="@color/answerColor"
+            android:textSize="17sp"
+            android:id="@+id/r3"
+            android:layout_below="@+id/a3"
+            android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:id="@+id/box4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Jak wygenerować klucze?"
+            android:textColor="@color/questionColor"
+            android:textSize="28sp"
+            android:id="@+id/a4"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Aby wygenerować klucz, należy przejść do zakładki 'Twoje klucze' i nacisnąć przycisk 'Generuj nowe klucze'. Tam należy podać swój adres email, którym będziemy się identyfikować oraz hasło, które będzie wykorzystywane do deszyfrowania wiadomości (Warto pamiętać, że im silniejsze hasło, tym większe bezpieczeństwo klucza prywatnego)."
+            android:textColor="@color/answerColor"
+            android:textSize="17sp"
+            android:id="@+id/r4"
+            android:layout_below="@+id/a4"
+            android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:id="@+id/box5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Jak zaszyfrować i odszyfrować wiadomość?"
+            android:textColor="@color/questionColor"
+            android:textSize="28sp"
+            android:id="@+id/a5"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Szyfrowanie wiadomości składa się z dwóch kroków. Pierwszym jest wybranie odbiorcy z bazy kontaktów, a drugim wpisanie wiadomości i naciśnięcie przycisku 'Szyfruj'. Deszyfrowanie to operacja odwrotna, dlatego musimy wkleić zaszyfrowaną wiadomość, wybrać swój email z bazy bluczy i wpisać hasło podane przy ich generowaniu. Po tej operacji naciskamy przycisk deszyfruj i jeśli wszystko przebiegnie pomyślnie, ukaże nam się odszyfrowana wiadomość. "
+            android:textColor="@color/answerColor"
+            android:textSize="17sp"
+            android:id="@+id/r5"
+            android:layout_below="@+id/a5"
+            android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

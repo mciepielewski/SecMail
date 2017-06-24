@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SecMail</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Ustawienia</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Kontakty -->
+    <string name="add_contact">Dodaj kontakt</string>
+    <string name="name">Imię:</string>
+    <string name="lastname">Nazwisko:</string>
+    <string name="email">Adres email:</string>
+    <string name="public_key">Klucz publiczny:</string>
+    <string name="contact_details">Szczegóły kontaktu</string>
+    <string name="back_to_contacts">Wróć do kontaktów</string>
+</resources>
